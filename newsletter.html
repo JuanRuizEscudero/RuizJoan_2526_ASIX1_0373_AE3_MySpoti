@@ -22,28 +22,27 @@
  <!-- Contenido principal -->
   <main>
     <article>
-      <section>
         <h2>Formulario de inscripción</h2>
             <form action="#" method="post">
             <fieldset>
                 <legend>Datos personales</legend>
                 <!-- Campo para escribir el nombre -->
-                <div>
-                    <label for="nombre">Nombre *</label>
-                    <input type="text" name="nombre" id="nombre" size="30" maxlength="100" required />
-                </div>
+                
+                <label for="nombre">Nombre *</label>
+                <input type="text" name="nombre" id="nombre" size="30" maxlength="100" required>
+                
                 <!-- Campo para escribir los apellidos -->       
-                <div>
-                    <label for="apellidos">Apellidos *</label>
-                    <input type="text" name="apellidos" id="apellidos" size="30" maxlength="100" required />
-                </div>
+                
+                <label for="apellidos">Apellidos *</label>
+                <input type="text" name="apellidos" id="apellidos" size="30" maxlength="100" required >
+                
                 <!-- Campo para la edad -->
-                <div>
-                    <label for="edad">Edad *</label>
-                    <input type="number" name="edad" id="edad" min="13" max="120" required />
-                </div>
+                
+                <label for="edad">Edad *</label>
+                <input type="number" name="edad" id="edad" min="13" max="120" required>
+                
                 <!-- Desplegable para elegir el país -->
-                <div> 
+                 
                     <label for="pais">País *</label>
                     <select name="pais" id="pais" required>
                         <option value="">-- selecciona --</option>
@@ -53,64 +52,57 @@
                         <option value="uk">Reino Unido</option>
                         <option value="other">Otro</option>
                     </select>
-                </div>
-
-                <div>
-                    <label for="email">Correo electrónico *</label>  <!-- Campo de correo electrónico -->
-                    <input type="email" name="email" id="email" size="30" maxlength="100" required />
-                </div>
+                
+                <label for="email">Correo electrónico *</label>  <!-- Campo de correo electrónico -->
+                <input type="email" name="email" id="email" size="30" maxlength="100" required>
+                
                 <!-- Opciones de sexo con botones -->
-                <div>
+                
                     Sexo:
-                    <input type="radio" name="sexo" id="sexo_m" value="m" />
-                    <label for="sexo_m">Masculino</label>
+                <input type="radio" name="sexo" id="sexo_m" value="m">
+                <label for="sexo_m">Masculino</label>
 
-                    <input type="radio" name="sexo" id="sexo_f" value="f" />
-                    <label for="sexo_f">Femenino</label>
+                <input type="radio" name="sexo" id="sexo_f" value="f">
+                <label for="sexo_f">Femenino</label>
 
-                    <input type="radio" name="sexo" id="sexo_o" value="o" />
-                    <label for="sexo_o">Otro</label>
-                </div>
+                <input type="radio" name="sexo" id="sexo_o" value="o">
+                <label for="sexo_o">Otro</label>
+                
                 <!-- Campo de fecha de nacimiento -->   
-                <div>
-                    <label for="dob">Fecha de nacimiento:</label>
-                    <input type="date" name="dob" id="dob" />
-                </div>
+                
+                <label for="dob">Fecha de nacimiento:</label>
+                <input type="date" name="dob" id="dob">             
             </fieldset>
             <!-- Intereses musicales -->
             <fieldset>
                 <legend>Intereses musicales</legend>
-                <div>
-                    <input type="checkbox" name="intereses" id="int_rap" value="rap" />
-                    <label for="int_rap">Rap</label>
+                
+                <input type="checkbox" name="intereses" id="int_rap" value="rap">
+                <label for="int_rap">Rap</label>
 
-                    <input type="checkbox" name="intereses" id="int_trap" value="trap" />
-                    <label for="int_trap">Trap</label>
+                <input type="checkbox" name="intereses" id="int_trap" value="trap">
+                <label for="int_trap">Trap</label>
 
-                    <input type="checkbox" name="intereses" id="int_flam" value="flamenco" />
-                    <label for="int_flam">Flamenco urbano</label>
+                <input type="checkbox" name="intereses" id="int_flam" value="flamenco">
+                <label for="int_flam">Flamenco urbano</label>
 
-                    <input type="checkbox" name="intereses" id="int_otro" value="otro" />
-                    <label for="int_otro">Otro</label>
-                </div>
+                <input type="checkbox" name="intereses" id="int_otro" value="otro">
+                <label for="int_otro">Otro</label>
             </fieldset>
 
             <fieldset>
-                <legend><label for="comentarios">Comentarios</label></legend>
-                <div>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escribe aquí tus comentarios"></textarea>
-                </div>
+                <legend><label for="comentarios">Comentarios</label></legend>               
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escribe aquí tus comentarios"></textarea>   
             </fieldset>
             <!-- Botones para enviar y borrar formulario -->
-            <div>
-                <input type="reset" value="Borrar formulario" />
-                <input type="submit" value="Enviar formulario" />
-            </div>
+            
+            <input type="reset" value="Borrar formulario">
+            <input type="submit" value="Enviar formulario">
+            
 
             <p><small>Los campos con * son obligatorios.</small></p>
             </form>
-        <p><small>Los campos con * son obligatorios.</small></p>
-      </section>
+            <p><small>Los campos con * son obligatorios.</small></p>
     </article>
   </main>
 </body>

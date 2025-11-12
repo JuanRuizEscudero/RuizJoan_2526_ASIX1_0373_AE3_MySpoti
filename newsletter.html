@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Newsletter — MORAD</title>
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+</head>
+<body>
+  <header>
+    <h1>Suscríbete a la Newsletter de MORAD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="discografia.html">Discografía</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <h2>Formulario de inscripción</h2>
+            <form action="#" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" name="nombre" id="nombre" size="30" maxlength="100" required />
+                </div>
+
+                <div>
+                    <label for="apellidos">Apellidos *</label>
+                    <input type="text" name="apellidos" id="apellidos" size="30" maxlength="100" required />
+                </div>
+
+                <div>
+                    <label for="edad">Edad *</label>
+                    <input type="number" name="edad" id="edad" min="13" max="120" required />
+                </div>
+
+                <div>
+                    <label for="pais">País *</label>
+                    <select name="pais" id="pais" required>
+                        <option value="">-- selecciona --</option>
+                        <option value="es">España</option>
+                        <option value="fr">Francia</option>
+                        <option value="it">Italia</option>
+                        <option value="uk">Reino Unido</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" name="email" id="email" size="30" maxlength="100" required />
+                </div>
+
+                <div>
+                    Sexo:
+                    <input type="radio" name="sexo" id="sexo_m" value="m" />
+                    <label for="sexo_m">Masculino</label>
+
+                    <input type="radio" name="sexo" id="sexo_f" value="f" />
+                    <label for="sexo_f">Femenino</label>
+
+                    <input type="radio" name="sexo" id="sexo_o" value="o" />
+                    <label for="sexo_o">Otro</label>
+                </div>
+
+                <div>
+                    <label for="dob">Fecha de nacimiento:</label>
+                    <input type="date" name="dob" id="dob" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Intereses musicales</legend>
+                <div>
+                    <input type="checkbox" name="intereses" id="int_rap" value="rap" />
+                    <label for="int_rap">Rap</label>
+
+                    <input type="checkbox" name="intereses" id="int_trap" value="trap" />
+                    <label for="int_trap">Trap</label>
+
+                    <input type="checkbox" name="intereses" id="int_flam" value="flamenco" />
+                    <label for="int_flam">Flamenco urbano</label>
+
+                    <input type="checkbox" name="intereses" id="int_otro" value="otro" />
+                    <label for="int_otro">Otro</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><label for="comentarios">Comentarios</label></legend>
+                <div>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escribe aquí tus comentarios"></textarea>
+                </div>
+            </fieldset>
+
+            <div>
+                <input type="reset" value="Borrar formulario" />
+                <input type="submit" value="Enviar formulario" />
+            </div>
+
+            <p><small>Los campos con * son obligatorios.</small></p>
+            </form>
+        <p><small>Los campos con * son obligatorios.</small></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
